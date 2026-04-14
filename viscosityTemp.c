@@ -4,7 +4,7 @@
 
 #include "udf.h"
 
-DEFINE_PROPERTY(temp_dependent_viscosity, cell, thread)
+DEFINE_PROPERTY(viscosityTemp, cell, thread)
 {
     real T;
     real mu_ref = 0.001;

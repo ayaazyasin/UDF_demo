@@ -2,11 +2,11 @@
    Centerline at y = 0, half-width h = 0.05 m
    Q0    = 10000 W/m^3
    (x0,y0) = (0.5, 0.04) m  -- near top wall
-   sigma = 0.05 m                                              */
+   sigma = 0.05 m               */
 
 #include "udf.h"
 
-DEFINE_SOURCE(gaussian_heat_source, cell, thread, dS, eqn)
+DEFINE_SOURCE(heatSource, cell, thread, dS, eqn)
 {
     real x[ND_ND];
     real Q0    = 1e7;
